@@ -1,0 +1,27 @@
+@use '../../styles/abstracts' as *;
+
+.blog {
+  overflow: hidden;
+  padding: 4.8rem;
+  padding-bottom: 0;
+  background-color: $color-gray-primary;
+  position: relative;
+
+  &-content {
+    margin-top: 4.8rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+
+    &:hover .blog-post:not(:hover) {
+      opacity: 0.5;
+    }
+  }
+}
+
+.envelope {
+  margin-top: 10.8rem;
+  height: 10rem;
+  background-color: #252934;
+  clip-path: polygon(50% 100%, 100% 0%, 100% 100%, 0 100%, 0% 0%);
+}

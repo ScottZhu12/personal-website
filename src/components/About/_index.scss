@@ -1,0 +1,67 @@
+@use '../../styles/abstracts' as *;
+
+.about {
+  padding: 4.8rem;
+  position: relative;
+  background-color: $color-gray-primary;
+
+  & > .resume:link,
+  & > .resume:visited {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: $color-black-primary;
+    text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
+      10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+  }
+
+  &-intro {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 4.8rem;
+
+    &__text > p {
+      width: 70%;
+
+      &:not(:first-of-type) {
+        margin-top: 2rem;
+      }
+    }
+
+    &__img {
+      clip-path: polygon(
+        20% 0%,
+        80% 0%,
+        100% 20%,
+        100% 80%,
+        80% 100%,
+        20% 100%,
+        0% 80%,
+        0% 20%
+      );
+    }
+  }
+}
+
+.about-intro__text__cards {
+  margin-top: 4.8rem;
+  display: flex;
+  gap: 4rem;
+
+  &__item {
+    width: 10rem;
+    height: 10rem;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-white-primary;
+    background-color: $color-blue-secondary;
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+  }
+}

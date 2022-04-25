@@ -1,0 +1,17 @@
+@use '../../styles/abstracts/' as *;
+
+.home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  & > .btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 4.6rem;
+    border: 2px solid $color-white-primary;
+    padding: 1.2rem 2.4rem;
+    border-radius: 3.5rem;
+  }
+}

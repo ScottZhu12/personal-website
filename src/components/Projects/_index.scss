@@ -1,0 +1,11 @@
+.projects {
+  overflow: hidden;
+  padding: 4.8rem;
+
+  &-content {
+    margin-top: 4.8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 30rem;
+  }
+}

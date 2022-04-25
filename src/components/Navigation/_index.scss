@@ -1,0 +1,16 @@
+@use '../../styles/abstracts' as *;
+
+.navigation {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: $color-blue-primary;
+  padding: 2.4rem;
+  padding-left: 4.8rem;
+  border-bottom: 0.3rem solid $color-blue-secondary;
+
+  &-list {
+    display: flex;
+    gap: 2rem;
+  }
+}
