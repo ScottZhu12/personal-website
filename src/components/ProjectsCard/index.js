@@ -44,7 +44,7 @@ const cardBtnVariants = {
   },
 };
 
-const ProjectsCard = ({ cardImg, cardHeading, cardParagraph }) => {
+const ProjectsCard = ({ cardImg, cardHeading, cardParagraph, cardLink }) => {
   const [showDetail, setShowDetail] = useState(false);
 
   return (
@@ -82,15 +82,18 @@ const ProjectsCard = ({ cardImg, cardHeading, cardParagraph }) => {
           >
             {cardParagraph}
           </motion.div>
-          <motion.button
+          <motion.a
             className='btn btn--projects-card'
             variants={cardBtnVariants}
             initial='hidden'
             animate='visible'
             whileHover='hover'
+            rel='noopener noreferrer'
+            href={cardLink}
+            target='_blank'
           >
             LEARN MORE
-          </motion.button>
+          </motion.a>
         </motion.div>
       )}
     </div>

@@ -46,34 +46,41 @@ const Projects = ({ reference }) => {
         viewport={{ once: true, margin: '-350px' }}
       >
         <ProjectsCard
+          cardImg={`${imgPath}/assets/blog-app.png`}
+          cardHeading='Blog App'
+          cardParagraph='React Js / Redux Toolkit'
+          cardLink='https://scottzhu-blog-async-v2.netlify.app/'
+        />
+
+        <ProjectsCard
           cardImg={`${imgPath}/assets/tip-calculator.png`}
           cardHeading='Tip Calculator'
           cardParagraph='React JS / Redux'
+          cardLink='https://tip-calculator-app-scottzhu.netlify.app/'
         />
         <ProjectsCard
           cardImg={`${imgPath}/assets/github-user-search.png`}
           cardHeading='Github User Search'
           cardParagraph='React JS / Redux'
+          cardLink='https://github-user-search-scottzhu.netlify.app/'
         />
         <ProjectsCard
           cardImg={`${imgPath}/assets/time-tracking-app.png`}
           cardHeading='Time Tracking App'
           cardParagraph='React JS / Redux'
+          cardLink='https://time-tracking-dashboard-scottzhu.netlify.app/'
         />
         <ProjectsCard
           cardImg={`${imgPath}/assets/advice-generator.png`}
           cardHeading='Advice Generator'
           cardParagraph='React JS / Redux'
+          cardLink='https://advice-generator-app-scottzhu.netlify.app/'
         />
         <ProjectsCard
           cardImg={`${imgPath}/assets/prelaunch-landing-page.png`}
           cardHeading='Prelaunch Landing Page'
           cardParagraph='SASS / Framer-motion'
-        />
-        <ProjectsCard
-          cardImg={`${imgPath}/assets/landing-page.png`}
-          cardHeading='Landing Page'
-          cardParagraph='SASS / Framer-motion'
+          cardLink='https://typemaster-pre-launch-landing-page-scottzhu.netlify.app/'
         />
       </motion.div>
     </div>
