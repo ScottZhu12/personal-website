@@ -46,6 +46,13 @@ const Projects = ({ reference }) => {
         viewport={{ once: true, margin: '-350px' }}
       >
         <ProjectsCard
+          cardImg={`${imgPath}/assets/todo-list.png`}
+          cardHeading='Todo List App'
+          cardParagraph='React Js / Redux Toolkit'
+          cardLink='https://scottzhu-todo-list.netlify.app/'
+        />
+
+        <ProjectsCard
           cardImg={`${imgPath}/assets/blog-app.png`}
           cardHeading='Blog App'
           cardParagraph='React Js / Redux Toolkit'
@@ -75,12 +82,6 @@ const Projects = ({ reference }) => {
           cardHeading='Advice Generator'
           cardParagraph='React JS / Redux'
           cardLink='https://advice-generator-app-scottzhu.netlify.app/'
-        />
-        <ProjectsCard
-          cardImg={`${imgPath}/assets/prelaunch-landing-page.png`}
-          cardHeading='Prelaunch Landing Page'
-          cardParagraph='SASS / Framer-motion'
-          cardLink='https://typemaster-pre-launch-landing-page-scottzhu.netlify.app/'
         />
       </motion.div>
     </div>
